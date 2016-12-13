@@ -1,0 +1,33 @@
+{
+    "name": "fahmiardi/laravel-mongodb-permission",
+    "description": "Permission handling for Laravel 5.3 using Mongodb (Moloquent) based on Spatie package",
+    "keywords": [
+        "spatie",
+        "laravel",
+        "mongodb",
+        "moloquent",
+        "permission",
+        "acl",
+        "rbac",
+        "security"
+    ],
+    "homepage": "https://github.com/fahmiardi/laravel-mongodb-permission",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fahmi Ardi",
+            "email": "f4hem.net@gmail.com",
+            "homepage": "https://github.com.be/fahmairdi",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "spatie/laravelpermission": "~1.5.2",
+        "moloquent/moloquent": "^0.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fahmiardi\\Mongodb\\Permissions\\": "src/"
+        }
+    }
+}
