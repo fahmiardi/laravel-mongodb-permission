@@ -22,7 +22,7 @@ class PermissionRegistrar extends BasePermissionRegistrar
      *
      * @return \Moloquent\Eloquent\Collection
      */
-    public function getPermissions(array $params = Array()) : Illuminate\Database\Eloquent\Collection
+    public function getPermissions(array $params = Array()) : \Illuminate\Database\Eloquent\Collection
     {
         return app(Permission::class)->get();
     }
