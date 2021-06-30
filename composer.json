@@ -1,5 +1,5 @@
 {
-    "name": "fahmiardi/laravel-mongodb-permission",
+    "name": "blpraveen/laravel-mongodb-permission-spatie",
     "description": "Permission handling for Laravel 5.3 using Mongodb (Moloquent) based on Spatie package",
     "keywords": [
         "spatie",
@@ -11,13 +11,13 @@
         "rbac",
         "security"
     ],
-    "homepage": "https://github.com/fahmiardi/laravel-mongodb-permission",
+    "homepage": "https://github.com/blpraveen/laravel-mongodb-permission-saptie",
     "license": "MIT",
     "authors": [
         {
-            "name": "Fahmi Ardi",
-            "email": "f4hem.net@gmail.com",
-            "homepage": "https://github.com/fahmiardi",
+            "name": "B L Praveen",
+            "email": "blpraveen2004@gmail.com",
+            "homepage": "https://github.com/blpraveen",
             "role": "Developer"
         }
     ],
