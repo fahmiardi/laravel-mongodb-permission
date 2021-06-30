@@ -75,4 +75,41 @@ class Role extends Model implements RoleContract
     {
         return (new $model)->where('roles.id', $this->getAttribute($this->primaryKey));
     }
+     /**
+     * Find a role by its name.
+     *
+     * @param string $name
+     *
+     * @throws RoleDoesNotExist
+     *
+     * @return Role
+     */
+    public static function findById($id, $guardName) : \Spatie\Permission\Contracts\Role
+    {
+        $role = static::find('id');
+
+        if (! $role) {
+            throw new RoleDoesNotExist();
+        }
+
+        return $role;
+    }
+
+    /**
+     * Find or create a role by its name and guard name.
+     *
+     * @param string $name
+     * @param string|null $guardName
+     *
+     * @return \Spatie\Permission\Contracts\Role
+     */
+    public static function findOrCreate(string $name, $guardName): \Spatie\Permission\Contracts\Role
+    {
+        $role = static::where('name',$name)->first();
+        if (is_null($role)) {
+            return static::create(['name'=>$name]);
+        } else {
+            return $role->update(['name'=>$name]);
+        }
+    }
 }
