@@ -1,6 +1,6 @@
 {
     "name": "blpraveen/laravel-mongodb-permission-spatie",
-    "description": "Permission handling for Laravel 5.3 using Mongodb (Moloquent) based on Spatie package",
+    "description": "Permission handling for Laravel using Mongodb (Moloquent) based on Spatie package",
     "keywords": [
         "spatie",
         "laravel",
@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "spatie/laravel-permission": "^1.5.2",
+        "spatie/laravel-permission": "^4.2",
         "moloquent/moloquent": "^0.3.0"
     },
     "autoload": {
