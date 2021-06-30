@@ -3,7 +3,7 @@
 namespace Fahmiardi\Mongodb\Permissions;
 
 use Illuminate\Contracts\Cache\Repository;
-use Illuminate\Contracts\Auth\Access\Gate;
+use Illuminate\Cache\CacheManager;
 use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\PermissionRegistrar as BasePermissionRegistrar;
 
@@ -12,9 +12,9 @@ class PermissionRegistrar extends BasePermissionRegistrar
     /**
      * {@inheritdoc}
      */
-    public function __construct(Gate $gate, Repository $cache)
+    public function __construct(CacheManager $cacheManager)
     {
-        parent::__construct($gate, $cache);
+        parent::__construct($cacheManager);
     }
 
     /**
