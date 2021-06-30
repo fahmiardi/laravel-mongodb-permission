@@ -22,8 +22,9 @@
         }
     ],
     "require": {
+	"illuminate/container": "^6.0",
         "spatie/laravel-permission": "^4.2",
-        "moloquent/moloquent": "^0.3.0"
+        "blpraveen/moloquent": "^0.3.0"
     },
     "autoload": {
         "psr-4": {
