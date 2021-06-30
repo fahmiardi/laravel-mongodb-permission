@@ -16,7 +16,7 @@ class Role extends Model implements RoleContract
      *
      * @return \Moloquent\Eloquent\Relations\EmbedsMany
      */
-    public function permissions()
+    public function permissions() : \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
         return $this->embedsMany(
             config('laravel-permission.table_names.role_has_permissions')
@@ -62,7 +62,7 @@ class Role extends Model implements RoleContract
      *
      * @return bool
      */
-    public function hasPermissionTo($permission)
+    public function hasPermissionTo($permission): bool
     {
         if (is_string($permission)) {
             $permission = app(Permission::class)->findByName($permission);
